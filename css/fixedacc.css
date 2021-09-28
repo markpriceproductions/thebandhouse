@@ -1,0 +1,11 @@
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+    padding: 12rem 0;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .25);
+    }
+    .fixed {
+    background-image: url('../img/accfixed.jpg');
+    position: fixed;
+    opacity: 1;
+    }

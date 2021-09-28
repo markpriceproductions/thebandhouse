@@ -1,0 +1,401 @@
+.body-container2{
+	padding-top: 1.5rem;
+    background-image: linear-gradient(to right, silver, white, gray);
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.locname .bdt3{
+    border-bottom: 1px solid #d7272c;
+}
+
+.locname
+{
+	margin-top: -1px;
+}
+
+.card1
+{
+	position: relative;
+	width: 200px;
+	height: 400px;
+    transform-style: preserve-3d;
+	margin-right: 10px;  
+}
+.card1 .face
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: 1.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transform: perspective(500px) rotateY(0deg);
+    border: 3px solid #fffd02;
+    border-radius: 20px;
+}
+.card1 .face.front
+{
+	background: #3329bd;
+	flex-direction: column;
+	text-align: center;
+
+}
+.card1:hover .face.front
+{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card1 .face.back
+{
+	background: #fffd02;
+	color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+    border: 3px solid #3329bd;
+
+}
+.card1:hover .face.back
+{
+	transform: perspective(500px) rotateY(360deg);
+}
+.card1 .face h2
+{
+	font-size: 10px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+	color: #fff;
+	width: 100px;
+}
+
+.card1 .face p
+{
+	font-size: 10px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+	color: #fff;
+}
+
+.card1 .face .back
+{
+	font-size: 15px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #3329bd;
+}
+.card1 img
+{
+	width: 150px;
+    height: 213px;
+    margin-top: 7px;
+    border-radius: 15px;
+}
+
+/* CARD 2 */
+.card2
+{
+	position: relative;
+	width: 200px;
+	height: 400px;
+    transform-style: preserve-3d;
+    margin-right: 10px;
+
+}
+.card2 .face
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: 1s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transform: perspective(500px) rotateY(0deg);
+    border: 3px solid #666b7a;
+    border-radius: 20px;
+}
+.card2 .face.front
+{
+	background: #b31114;
+}
+.card2:hover .face.front
+{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card2 .face.back
+{
+	background: #666b7a;
+	color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+    border: 3px solid #b31114;  
+}
+.card2:hover .face.back
+{
+	transform: perspective(500px) rotateY(360deg);
+}
+.card2 .face h2
+{
+	font-size: 10px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.card2 .face .back
+{
+	font-size: 15px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.card2 img
+{
+	width: 150px;
+    height: 213px;
+    margin-top: 7px;
+    border-radius: 15px;
+}
+
+/* CARD 3 */
+.card3
+{
+	position: relative;
+	width: 200px;
+	height: 400px;
+    transform-style: preserve-3d;
+    margin-right: 10px;
+
+}
+.card3 .face
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: 1s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transform: perspective(500px) rotateY(0deg);
+    border: 3px solid #295834;  
+    border-radius: 20px;
+}
+.card3 .face.front
+{
+	background: #002b1a;
+}
+.card3:hover .face.front
+{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card3 .face.back
+{
+	background: #295834;
+	color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+    border: 3px solid #002b1a;  
+
+}
+.card3:hover .face.back
+{
+	transform: perspective(500px) rotateY(360deg);
+}
+.card3 .face h2
+{
+	font-size: 10px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.card3 .face .back
+{
+	font-size: 15px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+
+}
+.card3 img
+{
+	width: 150px;
+    height: 213px;
+    margin-top: 7px;
+    border-radius: 15px;
+}
+
+/* CARD 4 */
+.card4
+{
+	position: relative;
+	width: 200px;
+	height: 400px;
+    transform-style: preserve-3d;
+    margin-right: 10px;
+}
+.card4 .face
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: 1s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transform: perspective(500px) rotateY(0deg);
+    border: 3px solid #666;  
+    border-radius: 20px;
+}
+.card4 .face.front
+{
+	background: #A0131B;
+}
+.card4:hover .face.front
+{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card4 .face.back
+{
+	background: #666;
+	color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+    border: 3px solid #A0131B;  
+
+}
+.card4:hover .face.back
+{
+	transform: perspective(500px) rotateY(360deg);
+}
+.card4 .face h2
+{
+	font-size: 10px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.card4 .face .back
+{
+	font-size: 15px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+
+}
+.card4 img
+{
+	width: 150px;
+    height: 213px;
+    margin-top: 7px;
+    border-radius: 15px;
+}
+
+/* CARD 5 */
+.card5
+{
+	position: relative;
+	width: 200px;
+	height: 400px;
+    transform-style: preserve-3d;
+    margin-right: 10px;
+
+}
+.card5 .face
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: 1s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    transform: perspective(500px) rotateY(0deg);
+    border: 3px solid #000;  
+    border-radius: 20px;
+}
+.card5 .face.front
+{
+	background: #f78f1e;
+}
+.card5:hover .face.front
+{
+	transform: perspective(500px) rotateY(180deg);
+}
+.card5 .face.back
+{
+	background: #000;
+	color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+    border: 3px solid #f78f1e;  
+
+}
+.card5:hover .face.back
+{
+	transform: perspective(500px) rotateY(360deg);
+}
+.card5 .face h2
+{
+	font-size: 10px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+
+}
+
+.card5 .face .back
+{
+	font-size: 15px;
+	transform: perspective(500px) translateZ(50px);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.card5 img
+{
+	width: 150px;
+    height: 213px;
+    margin-top: 7px;
+    border-radius: 15px;
+}
+

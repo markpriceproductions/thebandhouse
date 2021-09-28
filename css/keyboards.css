@@ -1,0 +1,59 @@
+.locname .back-section {
+    margin-top: 30px;
+    visibility: hidden;
+}
+
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+.body-container{
+    height: 100%;
+}
+.body-mid{
+    width: 100%;
+}
+.strings{
+    visibility: hidden;
+    height: 0px;
+}
+
+.keyboards .image{
+    width: 65%;
+    margin-left: 17.5%;
+}
+.woods{
+    visibility: hidden;
+    height: 0px;
+}
+.brass{
+    visibility: hidden;
+    height: 0px;
+}
+.perc{
+    visibility: hidden;
+    height: 0px;
+}
+.acc{
+    visibility: hidden;
+    height: 0px;
+}
+.locname .back-section
+{
+    visibility: visible;
+}
+}
+
+/* Devices under 920px (xl) */
+/* @media (max-width: 919.98px) {
+.body-container
+{
+height: 440px;
+}
+} */
+
+/* Devices under 375px (md) */
+@media (max-width: 375px) {
+.keyboards .image{
+    margin-left: 2.5%;
+    width: 95%;
+}
+}  

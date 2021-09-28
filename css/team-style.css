@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet');
+
+html{
+    scroll-behavior: smooth;
+}
+
+.card-container
+{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card-container .title
+{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.card-container .title .red-bottom
+{
+    border-bottom: 1px solid #d7272c;
+    padding-bottom: 1rem;
+}
+.card-container .card-box
+{
+    position: relative;
+    width: 265px;
+    height: 375px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-bottom: 26px;
+}
+.card-container .card-box:hover
+{
+    transform: scale(1.10);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+    border: solid 1px #f00;
+}
+.card-container .card-box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card-container .card-box .imgBx:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#f00,#000);
+    z-index: 1;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card-container .card-box:hover .imgBx:before
+{
+    opacity: 1;
+}
+
+.card-container .card-box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* START TEMP IMG */
+
+.card-container .card-box .imgBx.temp-img
+{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#f00,#000);
+    mix-blend-mode: multiply;
+}
+
+/* END TEMP IMG */
+
+.card-container .card-box .card-content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+.card-container .card-box .card-content h2
+{
+    color: #fff;
+    transform: translateY(200px);
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.card-container .card-box .card-content p
+{
+    color: #fff;
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.card-container .card-box:hover .card-content h2
+{
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+.card-container .card-box:hover .card-content p
+{
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+
+.locname {
+    margin-top: -1px;
+}
+
+.locname ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 55px;
+}
+.locname ul li{
+    margin-left: 25px;
+}
+
+.card-content.jaclyne a{
+    margin-right: 55px;
+
+}
+/* Devices under 498px (xl) */
+@media (max-width: 498px) {
+    .locname ul li{
+        margin-left: 10px;
+    }
+}
+
+/* Devices under 438px (xl) */
+@media (max-width: 438px) {
+    .locname ul li{
+        margin-left: 8px;
+    }
+}
+
+/* Devices under 430px (xl) */
+@media (max-width: 430px) {
+    .locname ul li{
+        margin-left: 6px;
+    }
+}
+
+/* Devices under 422px (xl) */
+@media (max-width: 422px) {
+    .locname ul{
+        margin-right: 44px;
+    }
+    .locname ul li{
+        margin-left: 6px;
+    }
+}
+
+/* Devices under 411px (xl) */
+@media (max-width: 411px) {
+    .locname ul{
+        margin-right: 34px;
+    }
+    .locname ul li{
+        margin-left: 6px;
+    }
+}
+
+/* Devices under 401px (xl) */
+@media (max-width: 401px) {
+    .locname ul{
+        list-style-type: none;
+        display: block;
+        justify-content: center;
+        margin-right: 55px;
+    }
+    .locname ul li{
+        margin-left: 6px;
+    }
+}

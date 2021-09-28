@@ -1,0 +1,60 @@
+.locname.comm 
+{
+    text-align: center;
+}
+
+.locname h4
+{
+    margin-top: -20px;
+}
+
+.locname.comm p
+{
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+.locname img
+{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.comm-page
+{
+    color: #000;
+}
+
+.locname .bottom-line
+{
+    border-bottom: 1px solid #d7272c;
+}
+
+.locname.comm .loc .links{
+    color: #d7272c;
+}
+
+.locname{
+    background-image: linear-gradient(to right, silver, white, gray);
+    padding: 15px;
+    margin-top: -1px;
+  }
+
+.locname .loc{
+    color: #000;
+    font-weight: 300;
+    margin-bottom: -5px;
+  }
+
+.locname .loc iframe{
+    margin-top: 25px;
+    border: 2px solid #d7272c;
+
+} 
+
+@media (max-width: 675px) {
+    .locname .loc iframe{
+        width: 100%;
+        height: auto;
+    }
+    }  

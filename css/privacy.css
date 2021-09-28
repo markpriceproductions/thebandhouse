@@ -1,0 +1,18 @@
+.privacy{
+    background-image: linear-gradient(to right, silver, white, gray);
+    height: 100%;
+}
+
+.notice #pnfo{
+    color: #000;
+}
+
+.secure-order #sec{
+    color: #000;
+    font-size: medium;
+    margin-bottom: -.5rem;
+}
+
+.privacy{
+    padding: 15px;
+}

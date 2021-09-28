@@ -1,0 +1,80 @@
+/*============= CONTACT MAP =============*/
+
+.parallax-map {
+    max-height: 400px;
+    min-height: 400px;
+    margin: 0;
+    padding: 0!important;
+  }
+  .parallax-map .container-fluid {
+    max-height: 400px!important;
+  }
+  .responsive-map{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    opacity: .9;
+  }
+  .responsive-map iframe {
+    left: 0;
+    top: 0;
+    min-height: 400px;
+    max-height: 400px;
+    min-width: 100%;
+    position: absolute;
+  }
+
+  .locname{
+    background-image: linear-gradient(to right, silver, white, gray);
+    padding: 15px;
+    margin-top: -2px;
+  }
+
+  .locname .loc{
+    color: #000;
+    font-weight: 300;
+    margin-bottom: -5px;
+    padding-bottom: 1.7rem;
+
+  }
+
+  .locname a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #d7272c;
+    /* padding-top: 1.7rem; */
+
+  }
+
+  .locname p{
+    display: flex;
+    justify-content: center;
+    /* color: #d7272c; */
+  }
+
+  .locname .h5 a{
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #d7272c;
+  }
+
+  .locname .bdt{
+    border-top: 1px solid #d7272c;
+  }
+
+  .locname .bdt2{
+    border-top: 1px solid #d7272c;
+  }
+
+  .locname .red-txt a{
+    color: #d7272c;
+  }
+
+  .locname .head{
+    margin-bottom: -20px;
+  }
+  /* .small-f a {
+    
+  } */

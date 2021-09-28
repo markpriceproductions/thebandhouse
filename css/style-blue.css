@@ -1,0 +1,418 @@
+/* *{
+  outline: 1px dotted red;
+} */
+
+/*-- Body Reset --*/
+body {
+overflow-x: hidden;
+font-family: 'Poppins', sans-serif;
+}
+
+/*============= LANDING GRADIENT =============*/
+
+.landing {
+width: 100%;
+background-image: linear-gradient(to right, #0956ea,#1c1c19,#1c1c19,#0956ea);
+margin-bottom: 0!important;
+}
+
+/* LOGO IMG */
+
+#logo-img img
+{
+  width: 100%;
+  height: 100%;
+  padding-bottom: .6rem;
+}
+
+/*-- HEADINGS & ICONS --*/
+
+.quotes {
+display: none;
+}
+h4 {
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-weight: 200;
+font-size: 1.6rem;
+letter-spacing: .1rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+text-shadow: .05rem .05rem .05rem rgba(0, 0, 0, .3);	
+}
+h1 {
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-weight: 200;
+font-size: 3rem;
+letter-spacing: .2rem;
+padding: 1.8rem 0;
+text-shadow: .05rem .05rem .05rem rgba(0, 0, 0, .3);
+}
+
+/*============= TOP BAR HEADER =============*/
+
+.top-bar {
+height: 2.8rem;
+padding: .5rem 0;
+}
+.top-bar a {
+color: white;
+text-decoration: none!important;
+font-size: 1rem;
+font-weight: 200;
+}
+
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+  background-image: linear-gradient(to right, #0956ea,#1c1c19,#1c1c19,#0956ea);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .15);
+  margin-top: -2px;
+}
+.navbar-brand img {
+height: 3rem;
+padding-top: .2rem;
+}
+button:active, button:focus {
+outline: 0 !important;
+}
+.nav-link {
+font-size: 1.2rem;
+margin-right: 3rem;
+text-transform: uppercase;
+letter-spacing: .12rem;
+font-weight: 200;
+color: white!important;
+text-shadow: .05rem .05rem .05rem rgba(0, 0, 0, .3);
+}
+.nav-link.active,
+.nav-link:hover {
+border-bottom: .05rem solid white;
+}
+
+.locname {
+  margin-top: -1px;
+}
+
+
+/*============= CAROUSEL =============*/
+
+.carousel-inner {
+  max-height: 25rem!important;
+}
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform .2s ease;
+}
+
+/*============= Body Middle CONTENT =============*/
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.body-container{
+  height: auto;
+  padding: 1rem;
+  background-image: linear-gradient(to right, silver, white, gray);
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-mid {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  /* background-image: linear-gradient(to right, silver, white, gray); */
+}
+
+/* Make the image to responsive */
+.image{
+  display: block;
+  width: 98%;
+  height: 250px;
+  /* border: 3px solid #fff;
+  border-radius: 15px; */
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 98%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.body-mid:hover .overlay {
+  opacity: 1;
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+padding: 12rem 0;
+box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, .25);
+}
+.fixed {
+background-image: url('../img/musicbook.jpg');
+position: fixed;
+opacity: 1;
+}
+
+/*============= MARQUEE =============*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+  --marquee-width: 100vw;
+  --marquee-height: 20vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  /* background-image: linear-gradient(to right, #d7272c,#1c1c19,#1c1c19,#d7272c); */
+  background-image: linear-gradient(to right, silver, white, gray);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.marquee-content li img {
+  width: 100%;
+  /* height: 100%; */
+  /* border: 2px solid #eee; */
+  border-style: solid;
+  border-color:  #1c1c19 #d7272c;
+  border-radius: 67px;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 5rem; }
+}
+
+/* Social Media Icons */
+
+.home .svg-inline--fa {
+color: #fff;
+transition: all .6s ease;
+}
+
+.home .svg-inline--fa.fa-stack-1x:hover {
+color:#fff;
+cursor: pointer!important;
+transition: all .6s ease;
+transform: scale(1.35);
+}
+.fa-circle {
+opacity: .15;
+}
+.fa-stack.fa-2x
+{
+height: 1.5em;
+width: 2.5em;
+margin-bottom: 18.2px;
+}
+.home {
+/* margin-top: 1rem; */
+display: flex;
+justify-content: center;
+text-align: center;
+padding-right: 16px;
+padding-top: 19px;
+}
+
+/*============= FOOTER =============*/
+
+footer {
+  background-image: linear-gradient(to right, #0956ea,#1c1c19,#1c1c19,#0956ea);
+  padding: 1rem 2rem 3rem;
+  margin-top: -1px;
+}
+footer img {
+  height: 3.5rem;
+  margin: 1.5rem auto;
+}
+footer a,
+.socket a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover,
+.socket a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Copyright */
+
+#copyright {
+  background-image: linear-gradient(to right, #0956ea,#1c1c19,#1c1c19,#0956ea);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  margin-top: -1px;
+}
+.cp-text {
+  width: 750px;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+.cp-text p {
+  margin-top: 6px;
+}
+.cp-rsv {
+  color: #c4c4c4;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Permanent Marker', cursive;
+}
+.cp-span {
+  color: #fff;
+}
+
+.cp-blue{
+  color: #4697ee;
+}
+
+/*============= MEDIA QUERIES =============*/
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+  h1 {
+  font-size: 2.6rem;
+}
+.fa-stack.fa-2x {
+  font-size: 2.1rem;
+}
+.fixed-background {
+  padding: 6.5rem 0;
+}
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+h1 {
+  font-size: 2rem;
+  padding: 1.4rem 0;
+}
+.fa-stack.fa-2x {
+  font-size: 1.8rem;
+}
+.fixed-background {
+  padding: 5.5rem 0;
+}
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+h1 {
+  font-size: 1.8rem;
+}
+.fixed-background {
+  padding: 4rem 0;
+}
+.carousel-indicators {
+  bottom: -22%;
+}
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+margin-left: 0px !important;
+margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+position: relative;
+width: 100%;
+z-index: 1;
+}
+.fixed-wrap {
+clip: rect(0, auto, auto, 0);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -999 !important;
+}
+.fixed {
+z-index: -999!important;
+display: block;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center center;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+will-change: transform;
+}
